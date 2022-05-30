@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- meta dados -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google icons -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- Icon da aba de navegacao -->
+
+    <link rel="shortcut icon" href="./icon/favicon-16x16.png" type="image/x-icon" />
+
+
+    <!-- Estilos CSS -->
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Titulo da pagina -->
+
+    <title>MusicPlayer</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="base">
+
+            <!-- Cabeçalho -->
+            <div class="detalhes">
+                <img class="imgMusic">
+                <div class="nomeMusic">Naruto Ending 1</div>
+            </div>
+
+            <!-- Tempo de musica -->
+            <div class="tempo">
+                <span class="tempoInicial">00:00</span>
+                <input type="range" min="0" max="100" id="barraT" value="0" />
+                <span class="tempoFinal">00:00</span>
+            </div>
+
+            <!-- Volume da musica -->
+            <div class="volume">
+                <i class="material-icons">&#xe04d</i>
+                <input type="range" min="0" max="100" id="barraV" value="80">
+                <i class="material-icons">&#xe050</i>
+            </div>
+
+            <!-- musicas -->
+            <audio></audio>
+
+
+            <!-- Botoes de navegacao -->
+            <div class="botoes">
+                <i class="material-icons" id="prev_btn">&#xe045</i>
+                <i class="material-icons" id="playpause_btn">&#xe039</i>
+                <i class="material-icons" id="next_btn">&#xe044</i>
+            </div>
+        </div>
+
+        <!-- Descricao da aplicacao -->
+        <aside class="descricao">
+
+            <div class="texto">
+                <h1>MusicPlayer</h1>
+                <p>Em uma ascenção a área da programação, mais especificamente como Desenvolvedor Jr em busca de
+                    experiência e prática, desenvolvi essa versão de MusicPlayer totalmente em HTML, CSS e JavaScript,
+                    espero que gostem!!</p>
+
+                <a target="_blank" href="https://github.com/RhoglasLobato"><img src="./img/github.png">RhoglasLobato</a>
+            </div>
+
+        </aside>
+
+    </div>
+</body>
+
+<!-- Script da pagina -->
+<script src="./script.js"></script>
+
+</html>
